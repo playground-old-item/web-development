@@ -1,0 +1,62 @@
+.home img{
+    opacity: 0.3;
+    position: left;
+    
+    
+}
+footer{
+    text-align: center;
+    padding: 5PX;
+    background-color: forestgreen;
+    color: aliceblue;
+}
+h1{
+    color: green;
+    font-weight: 200;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    font-style: bold;
+
+}
+body{
+    background-color: lightcyan;
+    margin: 50px 100px 50px 100px;
+   
+}
+
+
+.sidebar {
+    list-style-type: none;
+    margin: 10px 10px 20px 10px;
+    padding: 5px;
+    overflow: hidden;
+    background-color: rgb(123, 247, 179);
+    position: sticky;
+    top:0;
+   
+   
+   
+}
+.sidebar li{
+    display: inline;
+   
+}
+li a{
+   color: blue;
+   text-align: center;
+    padding: 20px;
+   
+    
+}
+.sidebar li a:hover{
+    background-color: rgb(134, 156, 36);
+    color: aliceblue;
+}
+.active{
+    background-color: rgb(136, 243, 136);
+}
+.sidebar li:last-child{
+    border-right: none;
+}
+

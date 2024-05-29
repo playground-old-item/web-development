@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CONTACT</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta charset="utf-8"> 
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+         <link rel="stylesheet" type="text/css" href="assignment2.css">
+        <style>
+            dt{
+                color: red;
+                font-size: 20px;
+                padding: 5px;
+            }
+            dd{
+               color: rgb(4, 22, 22);
+               font-size: 15px; 
+               font-style: italic;
+               padding: 5px;
+            }
+
+            body{
+                background-image: url(Capture1.PNG);
+                background-color: rgb(228, 228, 172);
+                background-repeat: repeat-y;
+                background-size: cover;
+
+                    
+            }
+
+        </style>
+    </head>
+    <body>
+        <header><h1><b style="color: yellow;"> DESHAN COCONUT OIL</b></h1></header>
+        <ul class="sidebar">
+            <li><a href="Assignment2.html">HOME PAGE</a></li>
+            <LI><a  href="second.html">OUR STROTY</a></LI>
+           
+            <li><a  href="third.html">PRODUCTION</a></li>
+            <li style="float:right"><a class="active" href="forth.html" >CONTACT</a></li>
+
+        </ul>
+        <p><b> We are dignity to say that we are leading production in southern province. </b> 
+            <dl>
+                <dt>Name</dt>
+                <dd>Deshan Coconut Oil store</dd>
+                
+                <dt>Address</dt>
+                <dd>No.23, Akuressa, Matara, Sri Lanka</dd>
+
+                <dt>Mobile</dt>
+                <dd>+9471 149 7474<br><br>
+                    <a href="mailto:deegaladil@gmail.com"><b>send email</b></a>
+                </dd>
+            </dl>
+        </p>
+        <h3 style="color: red;"> <b> ORDER REQUESTING FORM</b></h3>
+        <form id="forms" onsubmit="return validation()" action="forth.html" method="post">
+            <label for="fname">First Name : </label>
+            <input type="text" id="fname"><br><br>
+
+            <label for="sname">Last Name : </label>
+            <input type="text" id="sname"><br><br>
+
+            <lable for="Mobile"> Tel/Mobile Number : </lable>
+            <input type="text" id="Mobile"><br><br>
+
+            <label for="selection" ><b> Select Items</b></label><br><br>
+            <input type="checkbox" id="c1">
+            <label for="c1">Coconut Oil</label><br><br>
+            <input type="checkbox" id="c2">Hair Coconut Oil<br><br>
+            <input type="checkbox" id="c3">Turmeric powder<br><br>
+            <input type="checkbox" id="c4">Chilli Powder<br><br>
+            <input type="checkbox" id="c5">Kithul honey<br><br>
+            <input type="checkbox" id="c6">Curd<br><br>
+
+            <label for="comment"><b>Description</b></label><br><br>
+
+            <input type="text" id="comment" ><br><br>
+            <input type="submit" onclick="myfunction()"  value="submit">
+            <br><br>
+            <p id="demo1"></p>
+            <p id="demo"></p>
+
+
+
+        </form>
+        <script>
+           function myfunction(){
+                document.getElementById("demo1").innerHTML="Hello";
+                document.getElementById("demo").innerHTML=" Thanks for being with us.";
+            }
+
+            function validation(){
+                let x=document.forms["forms"]["fname"].value;
+                let y=document.forms["forms"]["Mobile"].value;
+                if (x=="" && y=="") {
+                    alert("First name and Mobile number must be filled");
+                    return false;
+                }else{
+                    return alert("Successfully submitted");
+                }
+            }
+        </script>
+       
+
+
+        
+    </body>
+    <footer>
+            
+        <small> &copy; DESHAN COCONUT OIL ~ YOUR HEALTH IS OUR PRIORITY ~</small></footer>
+    
+</html>
